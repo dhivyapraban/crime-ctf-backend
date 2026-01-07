@@ -1,2 +1,2 @@
 # crime-ctf
-capture the flag with the touch of a crime narration.
+capture the flag with the touch of crime narration.
