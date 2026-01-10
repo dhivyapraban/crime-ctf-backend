@@ -1,5 +1,3 @@
-require("dotenv").config();
-const express = require('express');
 const connectDB = require('./config/database');
 const detectiveRoutes = require('./routes/detectiveRoutes');
 const chiefRoutes = require('./routes/chiefRoutes');
@@ -40,6 +38,6 @@ app.get('/', (req, res) => {
 });
 
 // Start Server
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
