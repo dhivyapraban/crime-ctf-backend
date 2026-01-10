@@ -4,9 +4,6 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     const mongoURI = process.env.MONGO_URL;
-    console.log("ENV KEYS:", Object.keys(process.env));
-    console.log("MONGO_URL VALUE:", process.env.MONGO_URL);
-
     await mongoose.connect(mongoURI);
     console.log('MongoDB Atlas connected successfully to CTF database');
   } catch (err) {
