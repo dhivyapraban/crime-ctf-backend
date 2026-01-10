@@ -1,3 +1,4 @@
+const express = require('express');
 const connectDB = require('./config/database');
 const detectiveRoutes = require('./routes/detectiveRoutes');
 const chiefRoutes = require('./routes/chiefRoutes');
