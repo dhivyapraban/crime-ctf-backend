@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const connectDB = require('./config/database');
 const detectiveRoutes = require('./routes/detectiveRoutes');
 const chiefRoutes = require('./routes/chiefRoutes');
@@ -14,7 +15,7 @@ app.use(express.json());
 
 // CORS Middleware
 app.use(cors({
-  origin: process.env.API_URL,
+  origin: process.env.FRONTEND_URL,
   credentials: true
 }));
 
